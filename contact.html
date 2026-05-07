@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Started — Sara Spinosa Personal Training</title>
+  <meta name="description" content="Apply for online personal training with Sara Spinosa. Fill out the start-up form and let's build a plan that fits your life." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">Sara <span>Spinosa</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="workouts.html">Workouts</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Get Started</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="hero-eyebrow">Coaching Application</span>
+      <h1>Let's Build Your Plan</h1>
+      <p>Tell me a little about you and your goals. I'll get back to you within 1–2 business days.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width:780px;">
+      <div class="form-success" role="status">
+        Thanks! Your application was sent. I'll be in touch within 1–2 business days.
+      </div>
+      <div class="form-error" role="alert">
+        Something went wrong sending your application. Please email
+        <a href="mailto:trevsp27@gmail.com">trevsp27@gmail.com</a> directly and we'll get you set up.
+      </div>
+
+      <!--
+        FORMSPREE SETUP (one-time, ~2 minutes):
+        1. Go to https://formspree.io and sign up with trevsp27@gmail.com (free — no credit card).
+        2. Create a new form. Name it "Sara Coaching Application".
+        3. Copy the form's endpoint (looks like https://formspree.io/f/abcd1234).
+        4. Replace YOUR_FORM_ID below with the part after /f/ (e.g. abcd1234).
+        5. Submit the form once and click the confirmation email Formspree sends you.
+        Done — every submission will now arrive in your Gmail inbox.
+      -->
+      <form id="intake-form"
+            class="form"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST"
+            novalidate>
+        <input type="hidden" name="_subject" value="New coaching application — Sara Spinosa" />
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+        <div class="row">
+          <div class="field">
+            <label for="firstName">First Name *</label>
+            <input id="firstName" name="firstName" type="text" required />
+          </div>
+          <div class="field">
+            <label for="lastName">Last Name *</label>
+            <input id="lastName" name="lastName" type="text" required />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="age">Age</label>
+            <input id="age" name="age" type="number" min="13" max="120" />
+          </div>
+          <div class="field">
+            <label for="location">City / State</label>
+            <input id="location" name="location" type="text" placeholder="New Orleans, LA" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label>What are you most interested in? (select all that apply)</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="interests" value="senior" /> Senior / Low-Impact</label>
+            <label><input type="checkbox" name="interests" value="dumbbell" /> At-Home Dumbbell</label>
+            <label><input type="checkbox" name="interests" value="bodyweight" /> No-Equipment Bodyweight</label>
+            <label><input type="checkbox" name="interests" value="pilates" /> Ankle-Weight Pilates</label>
+            <label><input type="checkbox" name="interests" value="mobility" /> Flexibility &amp; Mobility</label>
+            <label><input type="checkbox" name="interests" value="nutrition" /> Nutrition Coaching</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="experience">Experience Level</label>
+          <select id="experience" name="experience">
+            <option value="beginner">Beginner — just getting started</option>
+            <option value="returning">Returning after a break</option>
+            <option value="intermediate">Intermediate — work out regularly</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="equipment">What equipment do you have at home?</label>
+          <input id="equipment" name="equipment" type="text" placeholder="e.g., dumbbells 5–20 lb, ankle weights, resistance bands, mat" />
+        </div>
+
+        <div class="field">
+          <label for="goals">What are your goals? *</label>
+          <textarea id="goals" name="goals" required placeholder="Tell me what you'd like to achieve over the next 3–6 months."></textarea>
+        </div>
+
+        <div class="field">
+          <label for="injuries">Any injuries, surgeries, or medical conditions I should know about?</label>
+          <textarea id="injuries" name="injuries" placeholder="Optional, but helpful so I can program safely for you."></textarea>
+        </div>
+
+        <div class="field">
+          <label for="referral">How did you hear about me?</label>
+          <select id="referral" name="referral">
+            <option value="">— Select —</option>
+            <option value="instagram">Instagram</option>
+            <option value="tiktok">TikTok</option>
+            <option value="facebook">Facebook</option>
+            <option value="friend">Friend / Referral</option>
+            <option value="search">Google / Search</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%;">Submit Application</button>
+      </form>
+
+      <div class="text-center mt-2" style="color:var(--color-muted);">
+        Prefer to chat first? Email <a href="mailto:hello@saraspinosa.com">hello@saraspinosa.com</a>
+        or DM me on
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>.
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand">Sara <span style="color:var(--color-primary);">Spinosa</span></div>
+        <p style="color:var(--color-muted); margin-top:0.75rem; max-width:340px;">
+          Online personal training based in New Orleans, LA.
+        </p>
+        <div class="socials">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok">TT</a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="workouts.html">Workouts</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Get Started</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>New Orleans, LA</li>
+          <li><a href="mailto:hello@saraspinosa.com">hello@saraspinosa.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      © <span id="year"></span> Sara Spinosa. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

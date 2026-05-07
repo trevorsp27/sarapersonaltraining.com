@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workouts — Sara Spinosa Personal Training</title>
+  <meta name="description" content="Browse workout videos: low-impact senior workouts, at-home dumbbell programs, bodyweight, ankle-weight Pilates, mobility, and nutrition." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">Sara <span>Spinosa</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="workouts.html">Workouts</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Get Started</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="hero-eyebrow">Free Workout Library</span>
+      <h1>Workouts for Every Body</h1>
+      <p>Filter by style and find a workout that fits your goals, your equipment, and your day.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <!-- Filter pills -->
+      <div class="pills">
+        <button class="pill active" data-filter="all">All</button>
+        <button class="pill" data-filter="senior">Senior / Low-Impact</button>
+        <button class="pill" data-filter="dumbbell">Dumbbell</button>
+        <button class="pill" data-filter="bodyweight">No Equipment</button>
+        <button class="pill" data-filter="pilates">Ankle-Weight Pilates</button>
+        <button class="pill" data-filter="mobility">Flexibility &amp; Mobility</button>
+        <button class="pill" data-filter="nutrition">Nutrition</button>
+      </div>
+
+      <div class="grid cols-3">
+        <!-- Senior / Low Impact -->
+        <article class="video-card" data-category="senior">
+          <div class="video-thumb">Low-Impact Standing Strength</div>
+          <div class="body">
+            <h4>Standing Strength for Seniors</h4>
+            <p>20 min · Low-Impact · No equipment</p>
+          </div>
+        </article>
+        <article class="video-card" data-category="senior mobility">
+          <div class="video-thumb">Chair-Supported Workout</div>
+          <div class="body">
+            <h4>Chair-Supported Total Body</h4>
+            <p>15 min · Gentle · Beginner</p>
+          </div>
+        </article>
+
+        <!-- Dumbbell -->
+        <article class="video-card" data-category="dumbbell">
+          <div class="video-thumb">Full Body Dumbbell Burn</div>
+          <div class="body">
+            <h4>Full Body Dumbbell Burn</h4>
+            <p>30 min · Dumbbells · Intermediate</p>
+          </div>
+        </article>
+        <article class="video-card" data-category="dumbbell">
+          <div class="video-thumb">Upper Body Dumbbell Sculpt</div>
+          <div class="body">
+            <h4>Upper Body Sculpt</h4>
+            <p>25 min · Dumbbells</p>
+          </div>
+        </article>
+        <article class="video-card" data-category="dumbbell">
+          <div class="video-thumb">Lower Body Dumbbell Power</div>
+          <div class="body">
+            <h4>Lower Body Power</h4>
+            <p>30 min · Dumbbells</p>
+          </div>
+        </article>
+        <article class="video-card" data-category="dumbbell">
+          <div class="video-thumb">Core Burn</div>
+          <div class="body">
+            <h4>10-Minute Core Burn</h4>
+            <p>10 min · Dumbbells optional</p>
+          </div>
+        </article>
+
+        <!-- Bodyweight -->
+        <article class="video-card" data-category="bodyweight">
+          <div class="video-thumb">No-Equipment Full Body</div>
+          <div class="body">
+            <h4>No-Equipment Full Body</h4>
+            <p>25 min · Bodyweight only</p>
+          </div>
+        </article>
+        <article class="video-card" data-category="bodyweight">
+          <div class="video-thumb">Travel Workout</div>
+          <div class="body">
+            <h4>Hotel Room Sweat</h4>
+            <p>20 min · Anywhere · No equipment</p>
+          </div>
+        </article>
+
+        <!-- Pilates / Ankle Weights -->
+        <article class="video-card" data-category="pilates">
+          <div class="video-thumb">Ankle Weight Pilates Glutes</div>
+          <div class="body">
+            <h4>Ankle-Weight Pilates Glutes</h4>
+            <p>20 min · Mat + ankle weights</p>
+          </div>
+        </article>
+        <article class="video-card" data-category="pilates">
+          <div class="video-thumb">Pilates Inner Thigh</div>
+          <div class="body">
+            <h4>Pilates Inner Thigh Sculpt</h4>
+            <p>15 min · Mat + ankle weights</p>
+          </div>
+        </article>
+
+        <!-- Mobility -->
+        <article class="video-card" data-category="mobility">
+          <div class="video-thumb">Daily Mobility Flow</div>
+          <div class="body">
+            <h4>10-Minute Daily Mobility</h4>
+            <p>10 min · Stretch · Recovery</p>
+          </div>
+        </article>
+        <article class="video-card" data-category="mobility">
+          <div class="video-thumb">Hip &amp; Lower Back Relief</div>
+          <div class="body">
+            <h4>Hip &amp; Lower Back Relief</h4>
+            <p>15 min · Gentle · Mat</p>
+          </div>
+        </article>
+
+        <!-- Nutrition -->
+        <article class="video-card" data-category="nutrition">
+          <div class="video-thumb">Protein Made Simple</div>
+          <div class="body">
+            <h4>Protein Made Simple</h4>
+            <p>8 min · Nutrition Basics</p>
+          </div>
+        </article>
+        <article class="video-card" data-category="nutrition">
+          <div class="video-thumb">What I Eat in a Day</div>
+          <div class="body">
+            <h4>What I Eat in a Day</h4>
+            <p>12 min · Real Food · Realistic</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center mt-2">
+        <p style="color:var(--color-muted);">Want a fully personalized program?</p>
+        <a href="contact.html" class="btn btn-primary">Get Custom Coaching</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand">Sara <span style="color:var(--color-primary);">Spinosa</span></div>
+        <p style="color:var(--color-muted); margin-top:0.75rem; max-width:340px;">
+          Online personal training based in New Orleans, LA.
+        </p>
+        <div class="socials">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok">TT</a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="workouts.html">Workouts</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Get Started</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>New Orleans, LA</li>
+          <li><a href="mailto:hello@saraspinosa.com">hello@saraspinosa.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      © <span id="year"></span> Sara Spinosa. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

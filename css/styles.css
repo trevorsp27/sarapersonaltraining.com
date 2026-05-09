@@ -440,15 +440,11 @@ section.section.alt { background: var(--color-bg-alt); }
 
 .profile-image {
   aspect-ratio: 3 / 4;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
   border-radius: var(--radius-lg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-family: var(--font-display);
-  font-size: 4rem;
   box-shadow: var(--shadow-md);
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .cred-list {

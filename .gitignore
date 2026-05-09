@@ -1,0 +1,5 @@
+# Ignore large video files — host these externally
+*.mov
+*.mp4
+*.avi
+*.mkv

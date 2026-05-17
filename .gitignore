@@ -1,4 +1,7 @@
-# Ignore large/original video files
+# Ignore large video files — host these on YouTube instead
 *.mov
+*.MOV
 *.avi
 *.mkv
+*.MOV.mp4
+assets/IMG_1617.MOV.mp4
